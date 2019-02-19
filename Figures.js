@@ -251,7 +251,7 @@ function createSphere(gl, radius)
     // usage = A GLenum specifying the usage pattern of the data store. gl.STATIC_DRAW: Contents of the buffer are likely to be used often and not change often. Contents are written to the buffer, but not read.
  
 
-    for(let i =Math.PI/4; i <= Math.PI*(7/4) i+=0.01){
+    for(let i =Math.PI/4; i <= Math.PI*(7/4); i+=0.01){
       verts.push(radius * Math.cos(i), radius * Math.sin(i), 0);
     }
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
